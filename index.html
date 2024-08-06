@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kraya</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="kraya-project">
+
+        <!--Header section-->
+
+        <header class="kraya-header container">
+            <nav class="kraya-header__actions">
+                <div class="kraya-header__need-help">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="#">Need help ?</a>
+                </div>
+                <ul class="kraya-header__sign-in-and-cart">
+                    <li class="kraya-header__sign-in">
+                        <i class="fa-regular fa-user" role=""></i>
+                        <a href="#">Kavya sree</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li class="kraya-header__cart">
+                        <a href="#">Wishlist</a>
+                        <i class="fa-regular fa-heart "></i>
+                        <span class="wishlist_count">0</span>
+                    </li>
+                    <li class="kraya-header__cart">
+                        <a href="#">Cart</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart_count">0</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="kraya-header__logo-and-search">
+                <div class="kraya-header__logo">
+                    <img src="/images/Kraya_logo.svg" alt="kraya_logo">
+                    <h1>KRAYA.</h1>
+                </div>
+                <nav class="kraya-header__navlist">
+                    <ul class="kraya-header__navlist-contents">
+                        <li><a href="#">Phone</a></li>
+                        <li><a href="#">Television</a></li>
+                        <li><a href="#">Refrigerator</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Washing machine</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </nav>
+                <form class="kraya-header__search-bar">
+                    <input type="text" placeholder="Search for products">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+        </header>
+
+        <!--BODY SECTION-->
+
+        <div class="kraya-body container">
+
+            <div class="kraya-body-bottom">
+
+                <!--ASIDE SECTION-->
+
+                <!--ASIDE MOBILE-->
+                <aside class="kraya-options">
+                    <div class="kraya-options__mobile">
+                        <nav class="kraya-options__sort-by">
+                            <ul>
+                                <li><i class="fa-solid fa-bars-staggered"></i>
+                                    <a href="#" class="sorting">Sort by</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-filter"></i>
+                                    <a href="#" class="sorting">Filters</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!--ASIDE DESKTOP-->
+                
+                <aside class="kraya-body-filtering">
+                    <h3>Home / Mobiles</h3>
+
+                    <nav class="kraya-filters">
+                        <ul>
+                            <li class="filter-options"><a href="#">Filters</a>
+                                <a href="#" id="clear" class="filter_options__clear">Clear all</a>
+                            </li>
+                            <li class="accordian">
+                                <a href="#" class="label">Price
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="content-box d-none">
+                                    <form class="price-range">
+                                        <label for="amount">Price range:</label>
+                                        <input type="text" id="amount">
+                                    </form>
+                                    <div id="slider"></div>
+                                </div>
+                            </li>
+                            <li class="accordian">
+                                <a href="#" class="label">Brand
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+
+                                <nav class="content-box d-none">
+                                    <form>
+                                        <ul class="mobile-check">
+                                            <li class="mobile-allCheck">
+                                                <input type="checkbox" id="check1" class="checkbox" name="lenovo">
+                                                <label class="check-brand" for="check1">Lenovo</label>
+                                            </li>
+                                            <li class="mobile-allCheck">
+                                                <input type="checkbox" id="check2" class="checkbox" name="samsung">
+                                                <label class="check-brand" for="check2">Samsung</label>
+                                            </li>
+                                            <li class="mobile-allCheck"><input type="checkbox" id="check3"
+                                                    class="checkbox" name="asus">
+                                                <label class="check-brand" for="check3">Asus</label>
+                                            </li>
+                                            <li class="mobile-allCheck"><input type="checkbox" id="check4"
+                                                    class="checkbox" name="honor">
+                                                <label class="check-brand" for="check4">Honor</label>
+                                            </li>
+                                            <li class="mobile-allCheck"><input type="checkbox" id="check5"
+                                                    class="checkbox" name="apple">
+                                                <label class="check-brand" for="check5">Apple</label>
+                                            </li>
+                                            <li class="mobile-allCheck"><input type="checkbox" id="check6"
+                                                    class="checkbox" name="mi">
+                                                <label class="check-brand" for="check6">MI</label>
+                                            </li>
+                                        </ul>
+                                        <a href="#"><span class="showMore">+SHOW MORE</span></a>
+                                    </form>
+                                </nav>
+
+                            </li>
+                            <li class="accordian">
+                                <a href="#" class="label">Battery Capacity
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="content-box d-none">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea officia
+                                        quasi
+                                        error
+                                        consequatur aspernatur iure harum illum? Sunt fuga quibusdam alias dolor
+                                        adipisci,
+                                        beatae eaque nam cum harum consequuntur.</p>
+                                </div>
+                            </li>
+                            <li class="accordian">
+                                <a href="#" class="label">Screen Size
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="content-box d-none">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea officia
+                                        quasi
+                                        error
+                                        consequatur aspernatur iure harum illum? Sunt fuga quibusdam alias dolor
+                                        adipisci,
+                                        beatae eaque nam cum harum consequuntur.</p>
+                                </div>
+                            </li>
+                            <li class="accordian">
+                                <a href="#" class="label">RAM
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="content-box d-none">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea officia
+                                        quasi
+                                        error
+                                        consequatur aspernatur iure harum illum? Sunt fuga quibusdam alias dolor
+                                        adipisci,
+                                        beatae eaque nam cum harum consequuntur.</p>
+                                </div>
+                            </li>
+                            <li class="accordian">
+                                <a href="#" class="label">Customer Ratings
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="content-box d-none">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea officia
+                                        quasi
+                                        error
+                                        consequatur aspernatur iure harum illum? Sunt fuga quibusdam alias dolor
+                                        adipisci,
+                                        beatae eaque nam cum harum consequuntur.</p>
+                                </div>
+                            </li>
+                            <li class="accordian">
+                                <a href="#" class="label">Camera
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="content-box d-none">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea officia
+                                        quasi
+                                        error
+                                        consequatur aspernatur iure harum illum? Sunt fuga quibusdam alias dolor
+                                        adipisci,
+                                        beatae eaque nam cum harum consequuntur.</p>
+                                </div>
+                            </li>
+                            <li class="accordian">
+                                <a href="#" class="label">Resolution Type
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="content-box d-none">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea officia
+                                        quasi error consequatur aspernatur iure harum illum? Sunt fuga quibusdam alias
+                                        dolor adipisci,
+                                        beatae eaque nam cum harum consequuntur.</p>
+                                </div>
+                            </li>
+                            <li class="accordian">
+                                <a href="#" class="label">Operating System
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="content-box d-none">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea officia
+                                        quasi error consequatur aspernatur iure harum illum? Sunt fuga quibusdam alias
+                                        dolor adipisci,
+                                        beatae eaque nam cum harum consequuntur.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!--MAIN SECTION-->
+
+                <main>
+                    <div class="kraya-body-options">
+                        <h2>Showing <span id="total"></span> of 25 results</h2>
+                        <nav class="kraya-body-sorting">
+                            <span>Sort By</span>
+                            <ul>
+                                <li><a href="#" class="ratings">Ratings</a></li>
+                                <li><a href="#" class="price_low_high">Price low-High</a></li>
+                                <li><a href="#" class="newFirst">Newest First</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="kraya-container-body" id="containerbody">
+                    </div>
+                </main>
+            </div>
+        </div>
+
+
+        <!-- FOOTER SECTION -->
+
+        <footer class="kraya-footer container">
+            <a href="#"><i class="fa-solid fa-chevron-up" id="arrow-up"></i></a>
+            <div class="kraya-footer__additional-data">
+                <div class="kraya-footer__wrapper">
+                    <div class="kraya-footer__stay-in-touch">
+                        <span>Let's stay in touch</span>
+                        <span class="kraya-footer__service">Get updates on sales specials and more</span>
+                    </div>
+                    <form class="kraya-footer__email">
+                        <input type="email" placeholder="Email address">
+                        <span>Subscribe</span>
+                    </form>
+                </div>
+                <div class="kraya-footer__wrapper">
+                    <div class="kraya-footer__follow-kraya">
+                        <span>Follow kraya.</span>
+                        <span class="kraya-footer__service">We want to hear from you</span>
+                    </div>
+                    <nav class="kraya-footer__social-media-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="kraya-footer__about-and-contact container">
+                <div class="kraya-footer__about-and-support">
+                    <nav class="kraya-footer__about-us">
+                        <span>About</span>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Carrers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="kraya-footer__about-us">
+                        <span>Support</span>
+                        <ul>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Cancellation and Returns</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="kraya-footer__about-us">
+                        <span>Policy</span>
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Intellectual Property</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </nav>
+                    <div class="kraya-footer__mail-us">
+                        <span>Mail us</span>
+                        <span class="kraya-footer__service">17187 N. Laurel Park Dr., Ste. 110 Livonia, MI 48152
+                            USA</span>
+                    </div>
+                </div>
+                <div class="kraya-footer__contact-and-payment">
+                    <div class="kraya-footer__contact-info">
+                        <h6>1800 123 4567</h6>
+                        <span class="kraya-footer__service">Service hours: 09:00-21:00</span>
+                        <input type="button" value="CHAT SUPPORT">
+                    </div>
+                    <nav class="kraya-footer__payment-support">
+                        <span>Paymeny methods</span>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-cc-discover"></a></li></i>
+                            <li><a href="#"><i class="fa-brands fa-cc-amex"></i></a></li></i>
+                            <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li></i>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="kraya-footer__copyrights container">
+                Copyright © 2010 - 2018 commerce factory. All Rights Reserved
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
